@@ -1,6 +1,16 @@
 sozluk = {"LOL":"komik bir şeye verilen cevap","CRINGE":"garip ya da utandırıcı bir şey","ROFL":"bir şakaya karşılık cevap","SHEESH":"onaylamamak","CREEPY":"korkunç","AGGRO":"agresifleşmek/sinirlenmek"}
-a = input("merhaba anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
+yanit = {"iyi":"iyi olduğunuza sevindim","iyiyim":"iyi olduğunuza sevindim","sen":"bende iyiyim teşekkürler","iyiyim sen":"teşekkürler bende iyiyim","iyi sen":"teşekkürler bende iyiyim","iyiyim teşekkürler sen nasılsın":"teşekkürler bende iyiyim","iyiyim sağol sen nasılsın":"teşekkürler bende iyiyim","iyi teşekkürler":"rica ederim","iyiyim teşekkürler":"rica ederim","iyi sağol":"rica ederim","iyiyim sağol":"rica ederim","kötü":"bunu duyduğuma üzüldüm","kötüyüm":"bunu duyduğuma üzüldüm","kötü sen":"bunu duyduğuma üzüldüm bende normalim","kötüyüm sen":"bunu duyduğuma üzüldüm bende normalim"}
+devam = {"1": "bir"}
+t = input("merhaba nasılsınız(lütfen bütün harfleri küçük yazın):")
+if t in yanit.keys():
+    print(yanit[t])
+    a = input("anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
+    
+if t not in yanit.keys():
+    print("üzgünüm ne dediğinizi anlamadım")
+    a = input("anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
+
 if a in sozluk.keys():
   print(sozluk[a])
-else:
-    print("üzgünüm bu kelime sözlükte bulunmuyor ama üstünde çalışıyoruz.")
+else: 
+  print("üzgünüm bu kelime sözlükte bulunmuyor ama üstünde çalışıyoruz.")
