@@ -9,8 +9,10 @@ if t in yanit.keys():
 if t not in yanit.keys():
     print("üzgünüm ne dediğinizi anlamadım")
     a = input("anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
-
-if a in sozluk.keys():
+while True:
+ if a in sozluk.keys():
   print(sozluk[a])
-else: 
+  a = input("anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
+ else: 
   print("üzgünüm bu kelime sözlükte bulunmuyor ama üstünde çalışıyoruz.")
+  a = input("anlamadığınız kelimeyi lütfen bütün harfleri büyük olacak şekilde yazınız:")
